@@ -1,6 +1,7 @@
 import { cn } from "@ui/utils";
 import "./globals.css";
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
 import { Fira_Sans } from "next/font/google";
 
 const firaSans = Fira_Sans({
@@ -35,6 +36,7 @@ export default function RootLayout({
         className={cn("antialiased min-h-screen min-w-full", firaSans.variable)}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
