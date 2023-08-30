@@ -3,6 +3,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
 import { Fira_Sans, Inter, Open_Sans } from "next/font/google";
+import { RouterEventsProvider } from "@ui/router-events";
+import { Nprogress } from "@ui/partials/NProgress";
 
 const firaSans = Fira_Sans({
   fallback: ["system-ui", "Roboto", "sans-serif"],
@@ -47,18 +49,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="h-screen min-h-screen">
-      <body
-        className={cn(
-          "antialiased h-full min-h-full min-w-full",
-          firaSans.variable,
-          inter.variable,
-          openSans.variable,
-        )}
-      >
-        {children}
-        <Analytics />
-      </body>
-    </html>
+    <RouterEventsProvider>
+      <html lang="en" className="h-screen min-h-screen">
+        <body
+          className={cn(
+            "antialiased h-full min-h-full min-w-full",
+            firaSans.variable,
+            inter.variable,
+            openSans.variable
+          )}
+        >
+          {children}
+          <Analytics />
+          <Nprogress color="#ffffff" />
+        </body>
+      </html>
+    </RouterEventsProvider>
   );
 }
