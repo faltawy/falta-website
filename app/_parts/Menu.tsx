@@ -54,7 +54,7 @@ export function Menu() {
           exit={{
             opacity: 0,
           }}
-          className="w-full h-full absolute inset-0 bg-black"
+          className="w-full h-full absolute inset-0 bg-black bg-gradient-to-l from-gray/20 to-transparent "
         >
           <div className="h-full w-full flex flex-col items-start justify-between">
             <div className="w-full p-6 flex justify-between items-center">
