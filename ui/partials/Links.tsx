@@ -25,6 +25,16 @@ export function FooterLinks() {
           <ArrowTopRightIcon />
         </Link>
       </li>
+      <li>
+        <Link
+          target="_blank"
+          href="https://cssbattle.dev/player/ah7255703"
+          className="flex items-center gap-1"
+        >
+          <span>CSSBattle</span>
+          <ArrowTopRightIcon />
+        </Link>
+      </li>
     </ul>
   );
 }

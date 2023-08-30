@@ -4,7 +4,7 @@ import { ComponentPropsWithoutRef, ElementRef, forwardRef } from "react";
 export const Logo = forwardRef<ElementRef<"svg">, ComponentPropsWithoutRef<"svg">>(
   ({ className, ...props }, _ref) => (
     <svg
-      className={cn("w-12 h-12 aspect-square", className)}
+      className={cn("w-9 h-9 aspect-square", className)}
       viewBox="0 0 48 48"
       fill="none"
       ref={_ref}

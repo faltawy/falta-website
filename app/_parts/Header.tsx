@@ -1,7 +1,11 @@
+"use client";
 import { Logo } from "@ui/components";
 import Link from "next/link";
+import { useMenu } from "../_providers/MenuProvider";
 
 export function Header() {
+  const { menuOpen, setMenuOpen } = useMenu();
+  console.log(menuOpen);
   return (
     <header className="p-6 w-full" data-container="header-container">
       <div className="w-full h-fit flex items-center justify-between">
@@ -9,7 +13,9 @@ export function Header() {
           <Logo />
         </Link>
         <div>
-          <button className="text-sm">menu</button>
+          <button onClick={() => setMenuOpen(true)} className="text-sm">
+            menu
+          </button>
         </div>
       </div>
     </header>

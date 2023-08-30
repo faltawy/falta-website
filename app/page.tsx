@@ -1,9 +1,9 @@
-import { FooterLinks, Menu } from "@ui/partials";
-import { Header } from "@ui/partials/Header";
-
+import { FooterLinks } from "@ui/partials";
+import { Header } from "./_parts/Header";
+import { Menu } from "./_parts/Menu";
 export default function Home() {
   return (
-    <main className="font-fira-sans bg-black text-white flex items-center justify-center p-4 h-full">
+    <main className="font-fira-sans bg-black text-white flex items-center justify-center p-4 h-full [--columns:5] sm:[--columns:10] background-grid">
       <div
         data-container="box-container"
         className="box w-full min-h-full h-full border border-gray block flex-1 relative"
@@ -16,8 +16,8 @@ export default function Home() {
                 <h1 className="uppercase [box-shadow:0px_1px_0px_0px_white] font-extrabold [font-size:var(--font-size)] text-transparent font-inter bg-clip-text bg-gradient-to-t from-gray to-white">
                   Ahmad Hassan
                 </h1>
-                <div>
-                  <span className="font-fira-sans [font-size:calc(var(--font-size)/2)] font-medium uppercase leading-tight">
+                <div className="h-fit overflow-hidden border border-white border-t-transparent w-full p-2">
+                  <span className="font-fira-sans [font-size:calc(var(--font-size)/2)] block font-medium uppercase leading-tight">
                     frontend engineer
                   </span>
                 </div>

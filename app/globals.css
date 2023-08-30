@@ -5,4 +5,26 @@
   :root {
     --color-gray: 202 202 202;
   }
+
+  .background-grid {
+    --color: rgba(255, 255, 255, 0.05);
+    --rows: 15;
+    --columns: 10;
+    background-image: linear-gradient(
+        var(--color) 0.5px,
+        transparent 0.5px,
+        transparent calc(100% - 0.5px),
+        var(--color) calc(100% - 0.5px)
+      ),
+      linear-gradient(
+        90deg,
+        var(--color) 0.5px,
+        transparent 0.5px,
+        transparent calc(100% - 0.5px),
+        var(--color) calc(100% - 0.5px)
+      );
+    background-size: calc(100% / var(--columns)) calc(100% / var(--rows));
+    border: 0.2px solid var(--color);
+    background-clip: border-box;
+  }
 }
