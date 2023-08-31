@@ -42,6 +42,10 @@ export const metadata: Metadata = {
   ],
   classification: "Personal",
   creator: "Ahmad Falta",
+  verification: {
+    google: "ABZQt2rUsxl9LrTiWV7YqdMdPJTI70HYtPLS0z385ts",
+    yandex: "91fc491a87c3a7fe",
+  },
 };
 
 export default function RootLayout({
