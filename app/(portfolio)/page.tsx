@@ -15,7 +15,7 @@ export default function Home() {
               Ahmad Hassan
             </h1>
             <div className="h-fit overflow-hidden border border-white w-full p-2">
-              <span className="font-fira-sans [font-size:calc(var(--font-size)/2)] text-center md:text-start block font-medium uppercase leading-tight">
+              <span className="font-fira-sans [font-size:calc(var(--font-size)/2)] block font-medium uppercase leading-tight">
                 frontend engineer
               </span>
             </div>

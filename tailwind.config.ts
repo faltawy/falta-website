@@ -11,6 +11,9 @@ const config: Config = {
     extend: {
       height: {
         screen: '100svh'
+      },
+      minHeight: {
+        screen: '100svh'
       }
     },
     colors: {
@@ -23,7 +26,8 @@ const config: Config = {
       'open-sans': ["var(--font-open-sans)"],
     }
   },
-  plugins: [require("@tailwindcss/typography"), require("tailwindcss-animate"), require('tailwindcss-debug-screens'),
+  plugins: [require("@tailwindcss/typography"), require("tailwindcss-animate"),
+    //  require('tailwindcss-debug-screens'),
   ],
 }
 export default config

@@ -29,7 +29,7 @@ function MenuNavLink({
         transition={{
           delay: delay,
           type: "tween",
-          duration: 0.2,
+          duration: 0.1,
         }}
         animate={{
           y: 0,
