@@ -8,6 +8,11 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    extend: {
+      height: {
+        screen: '100dvh'
+      }
+    },
     colors: {
       gray: "rgb(var(--color-gray))",
       white, black, transparent
