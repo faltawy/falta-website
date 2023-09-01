@@ -1,9 +1,10 @@
 import React from "react";
 
-type Props = {};
-
-function WhoamiPage({}: Props) {
-  return <div>WhoamiPage</div>;
+function WhoamiPage() {
+  return (
+    <div className="flex items-center justify-center h-full w-full">
+    </div>
+  );
 }
 
 export default WhoamiPage;

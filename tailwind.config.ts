@@ -27,7 +27,7 @@ const config: Config = {
     }
   },
   plugins: [require("@tailwindcss/typography"), require("tailwindcss-animate"),
-    //  require('tailwindcss-debug-screens'),
+     require('tailwindcss-debug-screens'),
   ],
 }
 export default config

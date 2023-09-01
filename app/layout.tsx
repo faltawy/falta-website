@@ -65,7 +65,7 @@ export default function RootLayout({
         <html lang="en" className="h-screen min-h-screen">
           <body
             className={cn(
-              "antialiased h-full min-h-full min-w-full",
+              "antialiased h-full min-h-full min-w-full ",
               IS_DEV && "debug-screens",
               firaSans.variable,
               inter.variable,

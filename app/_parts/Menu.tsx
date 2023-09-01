@@ -82,7 +82,7 @@ export function Menu() {
                 </ul>
               </div>
             </div>
-            <div className="w-full p-5 flex items-center justify-end">
+            <div className="w-full p-5 sm:flex items-center justify-end hidden">
               <FooterLinks />
             </div>
           </div>

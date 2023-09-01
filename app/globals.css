@@ -8,24 +8,24 @@
 
   .background-grid {
     --color: rgba(255, 255, 255, 0.05);
-    --rows: 15;
-    --columns: 10;
+    --border-width: 0.2px;
+    --rows: 50;
+    --columns: 50;
     background-image: linear-gradient(
-        var(--color) 0.5px,
-        transparent 0.5px,
-        transparent calc(100% - 0.5px),
-        var(--color) calc(100% - 0.5px)
+        var(--color) var(--border-width),
+        transparent var(--border-width),
+        transparent calc(100% - var(--border-width)),
+        var(--color) calc(100% - var(--border-width))
       ),
       linear-gradient(
         90deg,
-        var(--color) 0.5px,
-        transparent 0.5px,
-        transparent calc(100% - 0.5px),
-        var(--color) calc(100% - 0.5px)
+        var(--color) var(--border-width),
+        transparent var(--border-width),
+        transparent calc(100% - var(--border-width)),
+        var(--color) calc(100% - var(--border-width))
       );
     background-size: calc(100% / var(--columns)) calc(100% / var(--rows));
-    border: 0.2px solid var(--color);
-    background-clip: border-box;
+    background-attachment: fixed;
   }
 
   .padding-6 {

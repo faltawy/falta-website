@@ -8,7 +8,7 @@ export default function PortfolioLayout({
   children: React.ReactNode;
 }) {
   return (
-    <main className="font-fira-sans bg-black text-white h-full [--columns:5] sm:[--columns:10] background-grid">
+    <main className="font-fira-sans bg-black text-white h-full [--columns:50] [--rows:50] sm:[--rows:30] sm:[--columns:30] bg-local background-grid">
       <div className="bg-gradient-to-t from-gray/10 to-transparent h-full flex items-center justify-center p-4">
         <div
           className="w-full min-h-full h-full md:border md:border-gray flex-1 relative"
