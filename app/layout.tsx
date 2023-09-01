@@ -6,6 +6,7 @@ import { Fira_Sans, Inter, Open_Sans } from "next/font/google";
 import { RouterEventsProvider } from "@ui/router-events";
 import { Nprogress } from "@ui/partials/NProgress";
 import { MenuProvider } from "./_providers/MenuProvider";
+import { IS_DEV } from "../utils/_consts";
 
 const firaSans = Fira_Sans({
   fallback: ["system-ui", "Roboto", "sans-serif"],
@@ -46,8 +47,13 @@ export const metadata: Metadata = {
     google: "ABZQt2rUsxl9LrTiWV7YqdMdPJTI70HYtPLS0z385ts",
     yandex: "08bd74f1be0753d1",
   },
+  robots: {
+    notranslate: true,
+    index: true,
+    follow: true,
+    indexifembedded: true,
+  },
 };
-
 export default function RootLayout({
   children,
 }: {
@@ -60,6 +66,7 @@ export default function RootLayout({
           <body
             className={cn(
               "antialiased h-full min-h-full min-w-full",
+              IS_DEV && "debug-screens",
               firaSans.variable,
               inter.variable,
               openSans.variable

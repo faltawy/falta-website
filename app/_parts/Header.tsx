@@ -7,7 +7,7 @@ export function Header() {
   const { menuOpen, setMenuOpen } = useMenu();
   console.log(menuOpen);
   return (
-    <header className="p-6 w-full" data-container="header-container">
+    <header className="padding-6 w-full" data-container="header-container">
       <div className="w-full h-fit flex items-center justify-between">
         <Link href="/">
           <Logo />

@@ -27,4 +27,13 @@
     border: 0.2px solid var(--color);
     background-clip: border-box;
   }
+
+  .padding-6 {
+    @apply md:p-6 p-3;
+  }
+}
+@layer utilities {
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
 }

@@ -15,9 +15,14 @@ function MenuNavLink({
   href: string;
   delay: number;
 }) {
+  const { setMenuOpen } = useMenu();
+  function closeMenu() {
+    setMenuOpen(false);
+  }
   return (
     <li className="w-fit h-fit overflow-hidden">
       <MotionLink
+        onClick={closeMenu}
         initial={{
           y: "100%",
         }}
@@ -30,10 +35,10 @@ function MenuNavLink({
           y: 0,
         }}
         href={href}
-        activeClasses="[&:not(:hover)]:!opacity-100"
-        className="flex items-center hover:tracking-wider tracking-tight hover:opacity-100 gap-1 transition-all opacity-75"
+        activeClasses="[&:not(:hover)]:!opacity-100 pointer-events-none "
+        className="flex items-center hover:tracking-wider cursor-pointer tracking-tight hover:opacity-100 gap-1 transition-all opacity-75"
       >
-        <span className="uppercase text-7xl font-bold">{label}</span>
+        <span className="uppercase sm:text-7xl text-5xl font-bold">{label}</span>
       </MotionLink>
     </li>
   );
@@ -54,11 +59,13 @@ export function Menu() {
           exit={{
             opacity: 0,
           }}
-          className="w-full h-full absolute inset-0 bg-black bg-gradient-to-l from-gray/20 to-transparent "
+          className="w-full h-full md:absolute inset-0 bg-black bg-gradient-to-r from-gray/10 to-transparent fixed"
         >
           <div className="h-full w-full flex flex-col items-start justify-between">
             <div className="w-full p-6 flex justify-between items-center">
-              <h2 className="font-extrabold font-open-sans text-white text-2xl">AH</h2>
+              <h2 className="font-extrabold font-open-sans text-white text-2xl">
+                AH
+              </h2>
               <button onClick={() => setMenuOpen(false)}>close</button>
             </div>
             <div className="w-full flex-1 p-6 font-open-sans">
