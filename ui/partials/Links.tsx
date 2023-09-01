@@ -1,9 +1,9 @@
 import { ArrowTopRightIcon } from "@radix-ui/react-icons";
-import config from "../../config.json";
 import { Link } from "@ui/router-events";
+import config from "../../config.json";
 export function FooterLinks() {
   return (
-    <ul className="flex items-center gap-2 ">
+    <ul className="flex items-center gap-2 max-w-full [&>li]:text-xs sm:[&>li]:text-base">
       <li>
         <Link href="/blog" className="flex items-center gap-1">
           <span>Blog</span>

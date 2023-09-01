@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "dev:fresh": "rimraf -rf .next/ ./.contentlayer ./node_modules && next dev",
+    "dev:content":"contentlayer dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

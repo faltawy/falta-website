@@ -1,9 +1,8 @@
 "use client";
-import React from "react";
 import NavLink from "@ui/components/NavLink";
+import { FooterLinks } from "@ui/partials";
 import { AnimatePresence, motion } from "framer-motion";
 import { useMenu } from "../../app/_providers/MenuProvider";
-import { FooterLinks } from "@ui/partials";
 
 const MotionLink = motion(NavLink);
 function MenuNavLink({
@@ -20,7 +19,7 @@ function MenuNavLink({
     setMenuOpen(false);
   }
   return (
-    <li className="w-fit h-fit overflow-hidden">
+    <li className="w-fit h-fit overflow-hidden max-w-full">
       <MotionLink
         onClick={closeMenu}
         initial={{
@@ -36,9 +35,16 @@ function MenuNavLink({
         }}
         href={href}
         activeClasses="[&:not(:hover)]:!opacity-100 pointer-events-none "
-        className="flex items-center hover:tracking-wider cursor-pointer tracking-tight hover:opacity-100 gap-1 transition-all opacity-75"
+        className="flex items-center hover:tracking-wider cursor-pointer max-w-full tracking-tight hover:opacity-100 gap-1 transition-all opacity-75"
       >
-        <span className="uppercase sm:text-7xl text-5xl font-bold">{label}</span>
+        <span
+          style={{
+            fontSize: "clamp(2.5rem, 6vw, 4.5rem)",
+          }}
+          className="uppercase font-bold max-w-full"
+        >
+          {label}
+        </span>
       </MotionLink>
     </li>
   );

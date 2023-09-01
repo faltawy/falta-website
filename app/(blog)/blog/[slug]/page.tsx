@@ -1,3 +1,4 @@
+import { CustomMdxComponents } from "@ui/components/blog-components";
 import { allBlogs } from "contentlayer/generated";
 import { getMDXComponent } from "next-contentlayer/hooks";
 
@@ -22,7 +23,9 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
       <div className="mb-8 text-center">
         <h1>{blog?.title}</h1>
       </div>
-      <Content />
+      <div className="prose prose-sm prose-gray">
+        <Content components={CustomMdxComponents} />
+      </div>
     </article>
   );
 };

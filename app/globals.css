@@ -31,6 +31,9 @@
   .padding-6 {
     @apply md:p-6 p-3;
   }
+  svg {
+    @apply w-[1em] h-[1em];
+  }
 }
 @layer utilities {
   .flex-center {

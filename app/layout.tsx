@@ -1,12 +1,12 @@
-import { cn } from "@ui/utils";
-import "./globals.css";
-import type { Metadata } from "next";
-import { Analytics } from "@vercel/analytics/react";
-import { Fira_Sans, Inter, Open_Sans } from "next/font/google";
-import { RouterEventsProvider } from "@ui/router-events";
 import { Nprogress } from "@ui/partials/NProgress";
-import { MenuProvider } from "./_providers/MenuProvider";
+import { RouterEventsProvider } from "@ui/router-events";
+import { cn } from "@ui/utils";
+import { Analytics } from "@vercel/analytics/react";
+import type { Metadata } from "next";
+import { Fira_Sans, Inter, Open_Sans } from "next/font/google";
 import { IS_DEV } from "../utils/_consts";
+import { MenuProvider } from "./_providers/MenuProvider";
+import "./globals.css";
 
 const firaSans = Fira_Sans({
   fallback: ["system-ui", "Roboto", "sans-serif"],
@@ -62,10 +62,10 @@ export default function RootLayout({
   return (
     <MenuProvider>
       <RouterEventsProvider>
-        <html lang="en" className="h-screen min-h-screen">
+        <html lang="en">
           <body
             className={cn(
-              "antialiased h-full min-h-full min-w-full ",
+              "antialiased h-screen min-h-screen min-w-full",
               IS_DEV && "debug-screens",
               firaSans.variable,
               inter.variable,
