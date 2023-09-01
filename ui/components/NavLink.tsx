@@ -1,8 +1,8 @@
 "use client";
+import { Link } from "@ui/router-events";
 import { cn } from "@ui/utils";
-import Link from "next/link";
 import { usePathname, useSelectedLayoutSegments } from "next/navigation";
-import React, { type ComponentProps, forwardRef } from "react";
+import React, { forwardRef, type ComponentProps } from "react";
 
 type Props = {
   activeClasses?: string;
