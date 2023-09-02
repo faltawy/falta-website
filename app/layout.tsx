@@ -3,34 +3,10 @@ import { RouterEventsProvider } from "@ui/router-events";
 import { cn } from "@ui/utils";
 import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
-import { Fira_Sans, Inter, Open_Sans } from "next/font/google";
 import { IS_DEV } from "../utils/_consts";
 import { MenuProvider } from "./_providers/MenuProvider";
+import { firaSans, inter, openSans } from "./fonts";
 import "./globals.css";
-
-const firaSans = Fira_Sans({
-  fallback: ["system-ui", "Roboto", "sans-serif"],
-  display: "swap",
-  weight: ["400", "500", "600", "700"],
-  subsets: ["latin", "latin-ext"],
-  variable: "--font-fira-sans",
-});
-
-const inter = Inter({
-  fallback: ["system-ui", "Roboto", "sans-serif"],
-  display: "swap",
-  weight: ["400", "500", "600", "700"],
-  subsets: ["latin", "latin-ext"],
-  variable: "--font-inter",
-});
-
-const openSans = Open_Sans({
-  fallback: ["system-ui", "Roboto", "sans-serif"],
-  display: "swap",
-  weight: ["400", "500", "600", "700"],
-  subsets: ["latin", "latin-ext"],
-  variable: "--font-open-sans",
-});
 
 export const metadata: Metadata = {
   openGraph: {
@@ -43,7 +19,7 @@ export const metadata: Metadata = {
 
     images: [
       {
-        url: "assets/image.png",
+        url: "assets/og.png",
         width: 1200,
         height: 630,
         alt: "Falta",
