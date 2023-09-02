@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev:next": "next dev",
     "dev:fresh": "rimraf -rf .next/ ./.contentlayer ./node_modules && next dev",
-    "dev:content":"contentlayer dev",
+    "dev:content": "contentlayer dev",
+    "dev": "concurrently \"pnpm dev:next\" \"pnpm dev:content\"",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -41,6 +42,7 @@
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
     "@types/three": "^0.155.1",
+    "concurrently": "^8.2.1",
     "eslint-config-next": "13.4.19",
     "rimraf": "^5.0.1",
     "tailwindcss": "3.3.3",
