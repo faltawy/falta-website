@@ -33,6 +33,28 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://falta.info",
+    siteName: "Falta",
+    title: "Falta",
+    description: "Portfolio website for me (Falta)",
+
+    images: [
+      {
+        url: "assets/image.png",
+        width: 1200,
+        height: 630,
+        alt: "Falta",
+      },
+    ],
+  },
+  twitter: {
+    creatorId: "@ah7255703",
+    card: "summary_large_image",
+    images: ["assets/og.png"],
+  },
   title: "Falta",
   description: "Portfolio website for me (Falta)",
   authors: [
@@ -47,6 +69,7 @@ export const metadata: Metadata = {
     google: "ABZQt2rUsxl9LrTiWV7YqdMdPJTI70HYtPLS0z385ts",
     yandex: "08bd74f1be0753d1",
   },
+
   robots: {
     notranslate: true,
     index: true,
