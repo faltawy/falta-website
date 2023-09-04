@@ -1,3 +1,4 @@
+import { Link } from "@ui/router-events";
 import React from "react";
 
 function BlogPostLayout({ children }: { children: React.ReactNode }) {
@@ -10,9 +11,9 @@ function BlogPostLayout({ children }: { children: React.ReactNode }) {
           <div className="w-full container border-b border-b-gray">
             <div className="text-center p-2">
               <h1 className="md:text-4xl text-2xl font-times align-middle">
-                Falta
+                <Link href="/">Falta</Link>
                 <span className="text-gray font-bold mx-0.5">/</span>
-                Blogs
+                <Link href="/blog">Blogs</Link>
               </h1>
               <div className="font-times text-sm">
                 <span>{date.toDateString()}</span>

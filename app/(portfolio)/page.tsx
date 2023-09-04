@@ -6,13 +6,11 @@ export default function Home() {
       <div className="w-full padding-6 flex-1 flex-center md:block">
         <div className="w-full flex items-start justify-start md:mt-14">
           <div className="w-fit md:[--font-size:80px] sm:[--font-size:70px] [--font-size:45px] flex items-start flex-col">
-            <h1
-              className="uppercase font-extrabold leading-none [font-size:var(--font-size)] text-transparent font-inter bg-clip-text bg-gradient-to-t from-gray to-white"
-            >
+            <h1 className="uppercase font-extrabold leading-none [font-size:var(--font-size)] text-transparent font-inter bg-clip-text bg-gradient-to-t from-gray to-white">
               Ahmad Hassan
             </h1>
-            <div className="h-fit overflow-hidden sm:border sm:border-white border-0 w-full sm:p-2">
-              <span className="font-fira-sans [font-size:calc(var(--font-size)*0.5)] block font-medium uppercase leading-tight">
+            <div className="h-fit overflow-hidden sm:border sm:border-white bg-white text-gray-2 border-0 w-full sm:p-2">
+              <span className="font-fira-sans [font-size:calc(var(--font-size)*0.5)] block font-semibold uppercase leading-tight">
                 frontend engineer
               </span>
             </div>

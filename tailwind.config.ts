@@ -27,6 +27,7 @@ const config: Config = {
     },
     colors: {
       gray: "rgb(var(--color-gray))",
+      'gray-2': 'rgb(var(--color-gray-2))',
       white, black, transparent
     },
 

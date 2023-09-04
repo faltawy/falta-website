@@ -4,6 +4,7 @@
 @layer base {
   :root {
     --color-gray: 202 202 202;
+    --color-gray-2: 30 30 30;
   }
 
   .background-grid {

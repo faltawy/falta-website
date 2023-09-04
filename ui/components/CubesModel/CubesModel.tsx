@@ -1,24 +1,30 @@
 "use client";
-import React, { Suspense, useRef } from "react";
-import { useLoader, Canvas } from "@react-three/fiber";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
-import { Environment, OrbitControls,CameraControls } from "@react-three/drei";
-function CubesModel() {
-  const ref = useRef();
-  const gltf = useLoader(GLTFLoader, "cubes.glb");
-  return <primitive ref={ref} object={gltf.scene} />;
+import { CameraControls } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+// <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+{
+  /* <rect x="27.1304" y="27.1305" width="20.8696" height="20.8696" fill="white"/> */
 }
+{
+  /* <rect y="27.1305" width="20.8696" height="20.8696" fill="white"/> */
+}
+{
+  /* <rect width="20.8696" height="20.8696" fill="white"/> */
+}
+// </svg>
 
 function CubesScene() {
+  // create a scene with 3 cubes and a camera arranged like in the svg logo
+  // metalic cubes
   return (
     <div className="h-72 w-96">
       <Canvas>
         <ambientLight />
-        <pointLight position={[10, 10, 10]} />
-        <Suspense fallback="loading...">
-          <CubesModel />
-          <CameraControls />
-        </Suspense>
+        <mesh position={[0, 0, 0]}>
+          <boxGeometry args={[1, 1, 1]} />
+          <meshStandardMaterial color="black" />
+        </mesh>
+        <CameraControls />
       </Canvas>
     </div>
   );
