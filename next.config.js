@@ -9,7 +9,7 @@ const nextConfig = {
         has: [
           {
             type: "host",
-            value: "code.falta.com",
+            value: "code.falta.info",
           },
         ],
         destination: "https://github.com/ah7255703",
