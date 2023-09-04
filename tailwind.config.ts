@@ -1,5 +1,5 @@
 import type { Config } from 'tailwindcss'
-import { white, black, transparent } from 'tailwindcss/colors'
+import { black, transparent, white } from 'tailwindcss/colors'
 const config: Config = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -8,26 +8,31 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    container: {
+      center: true,
+    },
     extend: {
       height: {
         screen: '100svh'
       },
       minHeight: {
         screen: '100svh'
+      },
+      fontFamily: {
+        'fira-sans': ["var(--font-fira-sans)"],
+        'inter': ["var(--font-inter)"],
+        'open-sans': ["var(--font-open-sans)"],
+        times: ["TimesNewRoman", "Times New Roman", "Times", "Baskerville", "Georgia", "serif"],
       }
     },
     colors: {
       gray: "rgb(var(--color-gray))",
       white, black, transparent
     },
-    fontFamily: {
-      'fira-sans': ["var(--font-fira-sans)"],
-      'inter': ["var(--font-inter)"],
-      'open-sans': ["var(--font-open-sans)"],
-    }
+
   },
   plugins: [require("@tailwindcss/typography"), require("tailwindcss-animate"),
-     require('tailwindcss-debug-screens'),
+  require('tailwindcss-debug-screens'),
   ],
 }
 export default config

@@ -21,6 +21,17 @@ export const Post = defineDocumentType(() => ({
                 const [group] = post._raw.flattenedPath.split('/')
                 return group
             }
+        },
+        date: {
+            type: 'string',
+            resolve: (post) => {
+                const date = new Date(post.date)
+                return date.toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                })
+            }
         }
     },
 }))

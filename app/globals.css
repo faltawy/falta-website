@@ -34,6 +34,10 @@
   svg {
     @apply w-[1em] h-[1em];
   }
+  input,
+  button {
+    @apply outline-none focus:outline-none;
+  }
 }
 @layer utilities {
   .flex-center {

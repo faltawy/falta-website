@@ -10,6 +10,7 @@ export const CustomMdxComponents: MDXComponents = {
         <Link
           href={"#" + slug}
           className="opacity-0 group-hover:opacity-100 transition-opacity"
+          id={slug}
         >
           <Link1Icon className="rotate-45 w-[1em] h-[1em] text-2xl" />
         </Link>
