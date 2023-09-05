@@ -13,7 +13,7 @@ export default function PortfolioLayout({
         <div className="w-full min-h-full h-full md:border md:border-gray flex-1 relative">
           <div className="flex w-full h-full flex-col items-start justify-between min-h-full">
             <Header />
-            <div className="flex-1 w-full">{children}</div>
+            <div className="flex-1 w-full overflow-auto">{children}</div>
           </div>
           <Menu />
         </div>

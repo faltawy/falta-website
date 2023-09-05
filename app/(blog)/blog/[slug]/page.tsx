@@ -19,14 +19,21 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
   const Content = getMDXComponent(blog?.body.code || "");
 
   return (
-    <article className="py-8 mx-auto max-w-xl">
-      <div className="mb-8 text-center">
-        <h1>{blog?.title}</h1>
-      </div>
+    <main className="py-8 text-white mx-auto max-w-xl bg-black">
+      <section className="">
+        <div className="mb-8 text-center">
+          <span>React</span>
+          <h1>{blog?.title}</h1>
+          <div>
+            <p className="text-start">{blog?.summary}</p>
+          </div>
+        </div>
+      </section>
+
       <div className="prose prose-sm prose-gray">
         <Content components={CustomMdxComponents} />
       </div>
-    </article>
+    </main>
   );
 };
 
