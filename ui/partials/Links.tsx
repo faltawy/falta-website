@@ -1,14 +1,15 @@
 import { ArrowTopRightIcon } from "@radix-ui/react-icons";
-import { Link } from "@ui/router-events";
+import { Link as EventsLink } from "@ui/router-events";
+import Link from "next/link";
 import config from "../../config.json";
 export function FooterLinks() {
   return (
     <ul className="flex items-center gap-2 max-w-full [&>li]:text-xs sm:[&>li]:text-base">
       <li>
-        <Link href="/blog" className="flex items-center gap-1">
+        <EventsLink href="/blog" className="flex items-center gap-1">
           <span>Blog</span>
           <ArrowTopRightIcon />
-        </Link>
+        </EventsLink>
       </li>
       <li>
         <Link href={config.githubAccount} className="flex items-center gap-1">

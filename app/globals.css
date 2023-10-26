@@ -3,8 +3,9 @@
 @tailwind utilities;
 @layer base {
   :root {
-    --color-gray: 202 202 202;
-    --color-gray-2: 30 30 30;
+    --primary: 0 84% 40%;
+    --color-gray: 0 0% 79.2%;
+    --color-gray-2: 0 0% 11.8%;
   }
 
   .background-grid {
@@ -44,4 +45,7 @@
   .flex-center {
     @apply flex justify-center items-center;
   }
+}
+::selection {
+  color: hsl(var(--primary));
 }

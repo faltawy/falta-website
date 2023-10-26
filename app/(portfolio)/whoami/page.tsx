@@ -12,7 +12,7 @@ function WhoamiPage() {
             <div className="block mt-4 text-gray/80">
               <p className="text-lg font-fira-sans [&_span]:block">
                 <span>Welcome to my digital realm!</span>
-                <span>I'm Ahmad Hassan,</span>
+                <span className="text-primary">I'm Ahmad Hassan,</span>
                 <span>
                   a self-taught frontend software engineer based on Egypt.
                 </span>

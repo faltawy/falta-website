@@ -34,7 +34,7 @@ function MenuNavLink({
           y: 0,
         }}
         href={href}
-        activeClasses="[&:not(:hover)]:!opacity-100 pointer-events-none "
+        activeClasses="[&:not(:hover)]:!opacity-100 pointer-events-none text-primary"
         className="flex items-center hover:tracking-wider cursor-pointer max-w-full tracking-tight hover:opacity-100 gap-1 transition-all opacity-75"
       >
         <span
@@ -79,7 +79,6 @@ export function Menu() {
                 <ul>
                   <MenuNavLink delay={0} href="/" label="index" />
                   <MenuNavLink delay={0.2} href="/whoami" label="whoami" />
-                  <MenuNavLink delay={0.4} href="/contact" label="contact" />
                   <MenuNavLink
                     delay={0.6}
                     href="/portfolio"
