@@ -11,6 +11,16 @@
     min-width: 0;
     min-height: 0;
   }
+
+  ::selection {
+    color: hsl(var(--primary));
+  }
+  
+  body {
+    font-family: 'Noto Sans TC Variable', sans-serif;
+    @apply min-h-svh w-full;
+  }
+
   .background-grid {
     --color: rgba(255, 255, 255, 0.05);
     --border-width: 0.2px;
@@ -32,7 +42,6 @@
     background-size: calc(100% / var(--columns)) calc(100% / var(--rows));
     background-attachment: fixed;
   }
-
   .padding-6 {
     @apply md:p-6 p-3;
   }
@@ -43,12 +52,7 @@
   button {
     @apply outline-none focus:outline-none;
   }
-}
-@layer utilities {
-  .flex-center {
-    @apply flex justify-center items-center;
+  main > section {
+    min-height: 200px;
   }
-}
-::selection {
-  color: hsl(var(--primary));
 }
