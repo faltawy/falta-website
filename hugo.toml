@@ -1,0 +1,73 @@
+baseURL = 'https://afalta.me'
+languageCode = 'en-us'
+title = 'faltawy 😄'
+theme = 'typo'
+
+[taxonomies]
+tag = 'portfolio'
+category = "blog"
+googleAnalytics = "G-0QX292BDBQ"
+
+[params]
+description = "Ahmad Falta's personal portfolio and blog"
+
+theme = 'auto'
+colorPalette = 'default'
+hideHeader = false
+footerContent=" "
+homeIntroContent = """
+## I'm Ahmad Hassan
+
+Frontend Engineer [@open](https://open.cx)
+
+### About me
+
+I'm a frontend engineer with a passion for building beautiful and accessible web applications. I'm currently working at [OpenCopilot](https://opencopilot.so).
+
+I'm a self-taught developer and I love to learn new things. I'm passionate about building products that are accessible to everyone.
+
+I'm also Egyptian 🇪🇬 btw.
+"""
+
+homeCollectionTitle = 'Posts'
+homeCollection = 'posts'
+
+# Lists parameters
+paginationSize = 100
+listSummaries = true
+listDateFormat = '2 Jan 2006'
+
+# Breadcrumbs
+breadcrumbs = true
+
+# Social icons
+[[params.social]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/ahmad-falta/"
+
+[[params.social]]
+name = "github"
+url = "https://github.com/faltawy"
+
+# Main menu pages
+[[params.menu]]
+name = "home"
+url = "/"
+
+[[params.menu]]
+name = "blogs"
+url = "/blogs"
+
+# Syntax highligth on code blocks
+[markup]
+[markup.highlight]
+style = 'algol'
+
+[params.giscus]
+enable = false
+repo = "user/repo"
+repoid = "repoId"
+category = "General"
+categoryid = "categoryId"
+mapping = "pathname"
+theme = "preferred_color_scheme"
