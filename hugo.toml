@@ -29,15 +29,11 @@ I'm a self-taught developer and I love to learn new things. I'm passionate about
 I'm also Egyptian 🇪🇬 btw.
 """
 
-homeCollectionTitle = 'Posts'
-homeCollection = 'posts'
-
-# Lists parameters
-paginationSize = 100
+homeCollectionTitle = 'Blogs'
+homeCollection = 'blogs'
+paginationSize = 50
 listSummaries = true
 listDateFormat = '2 Jan 2006'
-
-# Breadcrumbs
 breadcrumbs = true
 
 # Social icons
