@@ -65,7 +65,7 @@ style = 'algol'
 
 [params.giscus]
 enable = false
-repo = "user/repo"
+repo = "faltawy/falta-website"
 repoid = "repoId"
 category = "General"
 categoryid = "categoryId"
