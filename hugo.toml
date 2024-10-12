@@ -64,7 +64,7 @@ url = "/blogs"
 style = 'algol'
 
 [params.giscus]
-enable = false
+enable = true
 repo = "faltawy/falta-website"
 repoid = "repoId"
 category = "General"
