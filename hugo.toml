@@ -66,8 +66,11 @@ style = 'algol'
 [params.giscus]
 enable = true
 repo = "faltawy/falta-website"
-repoid = "repoId"
+repoid = "R_kgDOKMEL0A"
 category = "General"
 categoryid = "categoryId"
 mapping = "pathname"
-theme = "preferred_color_scheme"
+theme = "dark"
+reactions = "1"
+metadata = "0"
+emitMetadata = "0"
