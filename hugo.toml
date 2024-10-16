@@ -5,7 +5,7 @@ theme = 'typo'
 
 [taxonomies]
 tag = 'portfolio'
-category = "blog
+category = "blog"
 googleAnalytics = "G-0QX292BDBQ"
 
 [params]
